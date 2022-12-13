@@ -11,24 +11,33 @@ p {
 }
 
 .center {
-    margin: auto;
-    max-width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
 }
 
-#logoneon {
-    max-width: 450px;
-    position: absolute;
-    top: 25%;
+.tagline {
+  position: relative;
+  top: 200px;
+}
+
+.logoneon {
+    position: relative;
+    top: 225px;
     animation-name: startAnim;
     animation-duration: 0.7s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-#tagline{
-  max-width: 500px;
-  position: absolute;
-  top: 20%;
+.box {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 15px;
+  margin-top: 4rem;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @keyframes startAnim {
@@ -204,15 +213,6 @@ span {
   justify-content: center;
 }
 
-.box {
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-  padding: 15px;
-  margin-top: 4rem;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 .m1 {
   color: white;
   text-align: center;
@@ -220,7 +220,7 @@ span {
 
 #m-div {
   position: relative;
-  margin-top: 750px;
+  margin-top: 320px;
 }
 
 .submenu {
@@ -261,9 +261,4 @@ span {
   margin-right: auto;
   justify-content: center;
   max-width: 500px;
-}
-
-img {
-  display: flex;
-  justify-content: center;
 }
