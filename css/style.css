@@ -1,0 +1,269 @@
+body {
+    min-height: 200vh;
+    background-image: url(../img/A10BG.svg);
+    background-repeat: repeat-y repeat-x;
+    background-size: 300px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    color:rgb(255, 255, 255);
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+}
+
+#logoneon {
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    animation-name: startAnim;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes startAnim {
+    0% {
+        filter: drop-shadow(0px 0px 1px rgb(153, 221, 233))
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 30px rgb(95, 202, 206))
+    }
+}
+
+ /* Remove default bullets */
+ ul {
+    list-style-type: none;
+    color:white;
+  }
+  
+  /* Remove margins and padding from the parent ul */
+.menu {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\25B6";
+    color: white;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  } 
+
+li {
+    list-style-type: none;
+    margin: 1rem 0.7rem;
+  }
+
+.price {
+  color:rgb(152, 230, 191);
+}
+.price::before {
+    content: "__ $";
+    display: inline-block;
+  }
+
+.drink-desc {
+  color:rgb(153, 221, 233);
+}
+
+.desc {
+  color:rgb(225, 169, 236)
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.gf::after {
+  content: url('../img/GF.svg');
+  position: relative;
+  left: 12rem;
+}
+
+.vtn::after {
+  content: url('../img/VT.svg');
+  position: relative;
+  left: 12rem;
+}
+
+.vgn::after {
+  content: url('../img/VG.svg');
+  height: 15px;
+  position: relative;
+  left: 12rem;
+}
+
+.gfvtn::after {
+  content: url('../img/GFVT.svg');
+  position: relative;
+  left: 12rem;
+}
+
+.gfvgn::after {
+  content: url('../img/GFVG.svg');
+  position: relative;
+  left: 12rem;
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+#instagram {
+  width: 2rem;
+}
+
+.ContactLinks {
+  position: absolute;
+  margin: auto;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+
+#callicon {
+  width: 1.5rem;
+}
+
+.hours {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.phours {
+  grid-column: 2 / span 2;
+  text-align: center;
+  font-size: large;
+}
+
+.days{
+  text-align: left;
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.hour {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  margin-left: 1rem;
+}
+
+span {
+  color: white;
+}
+
+#address {
+  grid-row-start: 3;
+  grid-column: 2 / span 2;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.copyright {
+  font-size: small;
+  margin-top: 2rem;
+  display:flex;
+  justify-content: center;
+}
+
+.box {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 15px;
+  margin-top: 4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#tagline{
+  width: 90%;
+  position: absolute;
+  top: 20%;
+}
+
+.m1 {
+  color: white;
+  text-align: center;
+}
+
+#m-div {
+  position: relative;
+  margin-top: 750px;
+}
+
+.submenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.m1{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.1rem;
+  text-align: center;
+}
+
+.m2{
+  border: none;
+  color: aqua;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 16px 16px;
+  margin-top: 0.4rem;
+  margin-right: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.clicked-highlight {
+  background-color: rgba(0, 255, 255, 0.5);
+  color: white;
+}
+
+.items-display {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  max-width: 500px;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+}
